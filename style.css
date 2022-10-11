@@ -34,17 +34,34 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 4vh;
-    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
 }
 
 #display {
     border: solid;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #9F9C99;
     height: 9.5vh;
     width: 33vh;
     margin: 1.5vh;
     border-radius: 2vh;
-    box-shadow: inset 2px 3px 5px 0px rgba(0,0,0,0.7);}
+    box-shadow: inset 2px 3px 5px 0px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#current-number {
+    width: 90%;
+    height: fit-content;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 1.8vh;
+    text-align: end;
+    white-space: pre-line;
+    overflow: auto;
+}
 
 .button {
     border: solid;
@@ -57,7 +74,7 @@ body {
     line-height: 6vh;
     font-size: 30px;
     font-weight: 900;
-    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
 }
 
 #equal {
@@ -76,7 +93,7 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 20px;
-    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
 }
 
 .fa-github {
@@ -89,11 +106,16 @@ body {
     transform: rotate(360deg) scale(1.2);
 }
 
-#ac, #c, #res {
+#ac,
+#c,
+#res {
     background-color: #D2386C;
 }
 
-#division, #plus, #minus, #moltiply {
+#division,
+#plus,
+#minus,
+#multiply {
     background-color: #F5DF4D;
 }
 
@@ -105,8 +127,13 @@ body {
     background-color: rgb(237, 241, 255);
 }
 
-#ac:hover, #c:hover, #res:hover, #division:hover, #plus:hover, #minus:hover, 
-#moltiply:hover, #equal:hover {
+#ac:hover,
+#c:hover,
+#res:hover,
+#division:hover,
+#plus:hover,
+#minus:hover,
+#moltiply:hover,
+#equal:hover {
     background-color: rgb(237, 241, 255);
 }
-

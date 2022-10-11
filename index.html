@@ -7,33 +7,36 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="title">Calculator</div>
     <div id="external-container">
         <div id="calculator-container">
-            <div id="display"></div>
-            <div id="ac" class="button">AC</div>
-            <div id="c" class="button">C</div>
-            <div id="res" class="button">%</div>
-            <div id="division" class="button">/</div>
-            <div id="7" class="button">7</div>
-            <div id="8" class="button">8</div>
-            <div id="9" class="button">9</div>
-            <div id="plus" class="button">+</div>
-            <div id="4" class="button">4</div>
-            <div id="5" class="button">5</div>
-            <div id="6" class="button">6</div>
-            <div id="minus" class="button">-</div>
-            <div id="1" class="button">1</div>
-            <div id="2" class="button">2</div>
-            <div id="3" class="button">3</div>
-            <div id="moltiply" class="button">x</div>
-            <div id="0" class="button">0</div>
-            <div id="dot" class="button">.</div>
-            <div id="equal" class="button">=</div>
+            <div id="display">
+                <div id="current-number"></div>
+            </div>
+            <div id="ac" class="button" onclick="Clear()">AC</div>
+            <div id="c" class="button" onclick="DeleteLastChar()">C</div>
+            <div id="res" class="button" onclick="Percent()">%</div>
+            <div id="division" class="button" onclick="Display('/')">/</div>
+            <div id="7" class="button" onclick="Display(7)">7</div>
+            <div id="8" class="button" onclick="Display(8)">8</div>
+            <div id="9" class="button" onclick="Display(9)">9</div>
+            <div id="plus" class="button" onclick="Display('+')">+</div>
+            <div id="4" class="button" onclick="Display(4)">4</div>
+            <div id="5" class="button" onclick="Display(5)">5</div>
+            <div id="6" class="button" onclick="Display(6)">6</div>
+            <div id="minus" class="button" onclick="Display('-')">-</div>
+            <div id="1" class="button" onclick="Display(1)">1</div>
+            <div id="2" class="button" onclick="Display(2)">2</div>
+            <div id="3" class="button" onclick="Display(3)">3</div>
+            <div id="multiply" class="button" onclick="Display('*')">x</div>
+            <div id="0" class="button" onclick="Display(0)">0</div>
+            <div id="dot" class="button" onclick="Display('.')">.</div>
+            <div id="equal" class="button" onclick="Display('=')">=</div>
         </div>
     </div>
 
